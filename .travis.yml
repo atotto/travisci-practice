@@ -8,6 +8,10 @@ before_install:
   - cd go
   - hg clone https://code.google.com/p/go
   - cd ..
+  - mkdir gophersjp.go
+  - cd gophersjp.go
+  - git clone https://github.com/gophersjp/go.git
+  - cd ..
 
-script:
+Script:
   - find . -name doc.go 

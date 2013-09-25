@@ -3,15 +3,3 @@ language: go
 go:
   - 1.1.2
 
-before_install:
-  - mkdir go
-  - cd go
-  - hg clone https://code.google.com/p/go
-  - cd ..
-  - mkdir gophersjp.go
-  - cd gophersjp.go
-  - git clone https://github.com/gophersjp/go.git
-  - cd ..
-
-Script:
-  - find . -name doc.go 

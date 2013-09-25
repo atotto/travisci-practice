@@ -1,8 +1,10 @@
 language: go
 
 go:
-  - 1.1.2
+  - release
 
 install:
+  - echo "install"
 
 script:
+  - echo "script"

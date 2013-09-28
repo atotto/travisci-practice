@@ -6,7 +6,8 @@ go:
 before_install:
   
 install:
-  - echo "install"
+  - go get -d code.google.com/p/go.tools
 
 script:
   - find `go env GOROOT` -name doc.go -printf "%P\n" 
+  - find `go env GOROOT`/../tip -name doc.go -printf "%P\n" 

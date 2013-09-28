@@ -1,7 +1,7 @@
 language: go
 
 go:
-  - release
+  - tip
   
 before_install:
   
@@ -10,4 +10,4 @@ install:
 
 script:
   - find `go env GOROOT` -name doc.go -printf "%P\n" 
-  - find `go env GOROOT`/../tip -name doc.go -printf "%P\n" 
+  - find $GOPATH/src/code.google.com/p/go.tools -name doc.go -printf "tools/%P\n" 

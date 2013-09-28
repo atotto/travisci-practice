@@ -1,7 +1,6 @@
 language: go
 
 go:
-  - tip
   - release
   
 before_install:
@@ -10,4 +9,4 @@ install:
   - echo "install"
 
 script:
-  - find `go env GOROOT` -name doc.go -print "%P\n" 
+  - find `go env GOROOT` -name doc.go -printf "%P\n" 

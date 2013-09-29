@@ -6,7 +6,7 @@ go:
 before_install:
   
 install:
-  - go get -v -d code.google.com/p/go.tools/cmd/godoc
+  - go get code.google.com/p/go.tools/cmd/godoc
 
 script:
   - find `go env GOROOT` -name doc.go -printf "%P\n" 

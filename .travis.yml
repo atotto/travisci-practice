@@ -7,9 +7,11 @@ before_install:
   
 install:
   - go get -v code.google.com/p/go.tools/cmd/godoc
-  - cat $HOME/.gvm/scripts/gvm
+  - cat $GVM_ROOT/scripts/gvm-default
 
 script:
   - find `go env GOROOT` -name doc.go -printf "%P\n" 
-  - ls $HOME/gopath
+  - ls $HOME/gopath/src
+ 
+  - find $HOME/gopath/src/code.google.com/p/go.tools -name doc.go -printf "tools/%P\n" 
  

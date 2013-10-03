@@ -6,8 +6,8 @@ go:
 before_install:
   
 install:
-  - go get -v code.google.com/p/go.tools/cmd/godoc
-  - cat $GVM_ROOT/scripts/gvm-default
+  - go get -d code.google.com/p/go.tools/cmd/godoc
+  - ls
 
 script:
   - find `go env GOROOT` -name doc.go -printf "%P\n" 

@@ -11,7 +11,7 @@ install:
 
 script:
   - find `go env GOROOT` -name doc.go -printf "%P\n" 
-  - ls $HOME/gopath/src
+  - ls -R $HOME/gopath/src
  
   - find $HOME/gopath/src/code.google.com/p/go.tools -name doc.go -printf "tools/%P\n" 
  

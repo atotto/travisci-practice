@@ -8,7 +8,6 @@ before_install:
 install:
   - go get -d code.google.com/p/go.tools/cmd/godoc
   - ls -a
-  - git log
 
 script:
   - find `go env GOROOT` -name doc.go -printf "%P\n" 

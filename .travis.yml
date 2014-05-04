@@ -1,5 +1,7 @@
 os:
   - linux
+  - osx
+  - windows
 
 language: go
 
@@ -9,7 +11,7 @@ go:
 before_install:
   
 install:
+  - go version
 
 script:
-  - go version
   - go env

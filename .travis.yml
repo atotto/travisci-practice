@@ -1,17 +1,15 @@
+os:
+  - linux
+
 language: go
 
 go:
-  - tip
+  - go1.2
   
 before_install:
   
 install:
-  - go get -d code.google.com/p/go.tools/cmd/godoc
-  - ls -a
 
 script:
-  - find `go env GOROOT` -name doc.go -printf "%P\n" 
-  - ls -R $HOME/gopath/src
- 
-  - find $HOME/gopath/src/code.google.com/p/go.tools -name doc.go -printf "tools/%P\n" 
- 
+  - go version
+  - go env

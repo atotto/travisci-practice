@@ -7,7 +7,7 @@ before_install:
   
 install:
   - go version
-  - sudo apt-get install xset
+  - sudo apt-get install xclip
 
 script:
   - go env

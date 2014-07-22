@@ -1,6 +1,6 @@
 os:
-  - linux
   - osx
+  - linux
   
 install:
   - go version

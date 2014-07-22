@@ -1,4 +1,8 @@
-language: ruby
+language: go
+
+go:
+ - go1.2
+ - go1.3
 
 os:
   - osx

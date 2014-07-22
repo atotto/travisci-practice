@@ -1,13 +1,14 @@
+os:
+  - linux
+  - osx
+  
 language: go
 
-go:
-  - go1.2
-  
 before_install:
   
 install:
   - go version
-  - sudo apt-get install xclip
-
+  - echo $TRAVIS_OS_NAME
+  
 script:
   - go env

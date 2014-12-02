@@ -1,11 +1,8 @@
 os:
-  - osx
   - linux
+  - osx
 
-language: cpp
-
-compiler:
-  - clang
+language: go
 
 install:
   - go version

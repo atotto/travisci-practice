@@ -4,7 +4,6 @@ go:
  - go1.4.1
 
 os:
-  - linux
   - osx
 
 install:

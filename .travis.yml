@@ -5,6 +5,7 @@ go:
 
 os:
   - osx
+  - linux
 
 install:
   - go version
